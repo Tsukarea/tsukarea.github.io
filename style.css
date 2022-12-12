@@ -1,32 +1,3 @@
-
-Skip to content
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-@Tsukarea
-pxlsamosa /
-portfolio
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-
-    Insights
-
-portfolio/style.css
-@pxlsamosa
-pxlsamosa Add files via upload
-Latest commit 942e081 Aug 21, 2022
-History
-1 contributor
-518 lines (515 sloc) 9.23 KB
-/* dsadsadas */
 @font-face {
   src: url("Pixelar\ Regular\ W01\ Regular.ttf");
   font-family: pixelare;
@@ -221,7 +192,7 @@ p {
   height: 4px;
   background: #efb0c5;
 }
-.landscapes .landscapes h2::before {
+.art .art h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -231,39 +202,16 @@ p {
   height: 4px;
   background: #4788b3;
 }
-.weapons .weapons h2::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 60px;
-  height: 4px;
-  background: #849be4;
-}
-.characters .characters h2::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 60px;
-  height: 4px;
-  background: #9cdb43;
-}
-.title.pink h2 {
+.art.title h2 {
   color: #f9c5c4;
 }
-.title.pink p {
+.art.title p {
   color: #fff;
-}
-.title.black p {
-  color: #000;
 }
 .about {
   background: #000f;
 }
-.title.pink h2::before {
+.art.title h2::before {
   background: #efb0c4;
 }
 .about .content {
@@ -285,71 +233,30 @@ p {
 .about .content .imgBx img {
   max-width: 100%;
 }
-.showcase .title.black h2 {
-  color: white;
-}
-.showcase .title.black p {
-  color: white;
-  font-size: x-large;
-}
-.showcase {
-  background-color: #939adf;
-}
-.showcase .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.showcase .content .showcaseBx img {
-  width: 100%;
-  height: 90%;
-}
-.showcase .content .showcaseBx {
-  padding: 10px 10px;
-  max-width: 340px;
-  margin: 40px;
-  transition: 0.5s;
-  background: #f5f5f5;
-  text-align: center;
-  line-height: 2.3em;
-}
-.showcase .content .showcaseBx:hover {
-  background: #000;
-  /* transform: scale(1.1); */
-}
-.showcase .content .showcaseBx h3 {
-  margin: 0;
-  transition: 0.5s;
-}
-.showcase .content .showcaseBx:hover h3 {
-  color: #fff;
-}
-
 .landscapes .title.landscapes h2 {
   color: white;
 }
-.landscapes .title.landscapes p {
+.landscapes .title.art p {
   color: white;
   font-size: x-large;
 }
-.landscapes {
+.art {
   background-color: #66a3cc;
 }
-.landscapes .content {
+.art .content {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.landscapes .content h3 {
+.art .content h3 {
   color: white;
 }
-.landscapes .content .landscapes img {
+.art .content .art img {
   width: 100%;
   height: 100%;
 }
-.landscapes .content .landscapes {
+.art .content .art {
   padding: 10px 10px;
   max-height: 350px;
   max-width: 350px;
@@ -359,131 +266,15 @@ p {
   text-align: center;
   line-height: 2em;
 }
-.landscapes .content .landscapes:hover {
+.art .content .art:hover {
   background: #000000;
   /* transform: scale(1.1); */
 }
-.landscapes .content .landscapes h3 {
+.art .content .art h3 {
   margin: 0;
   transition: 0.5s;
 }
-.landscapes .content .landscapes:hover h3 {
-  color: #000000;
-}
-
-.showcase .content .showcaseBz img {
-  width: 100%;
-  height: 90%;
-}
-.showcase .content .showcaseBz {
-  padding: 20px 20px;
-  max-height: 850px;
-  max-width: 850px;
-  margin: 40px;
-  transition: 0.5s;
-  background: #f5f5f5;
-  text-align: center;
-  line-height: 3.1em;
-}
-.showcase .content .showcaseBz:hover {
-  background: #000;
-  /* transform: scale(1.1); */
-}
-.showcase .content .showcaseBz h2 {
-  margin: 0;
-  transition: 0.5s;
-}
-.showcase .content .showcaseBz:hover h2 {
-  color: #fff;
-}
-
-.characters .title.characters h2 {
-  color: white;
-}
-.characters .title.characters p {
-  color: white;
-  font-size: x-large;
-}
-.characters {
-  background-color: #59c135;
-}
-.characters .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.characters .content h3 {
-  color: white;
-}
-.characters .content .characters img {
-  width: 100%;
-  height: 100%;
-}
-.characters .content .characters {
-  padding: 10px 10px;
-  max-height: 350px;
-  max-width: 350px;
-  margin: 40px;
-  transition: 0.5s;
-  object-fit: cover;
-  background: #f5f5f5;
-  text-align: center;
-  line-height: 2em;
-}
-.characters .content .characters:hover {
-  background: #000000;
-  /* transform: scale(1.1); */
-}
-.characters .content .characters h3 {
-  margin: 0;
-  transition: 0.5s;
-}
-.characters .content .characters:hover h3 {
-  color: #000000;
-}
-.weapons .title.weapons h2 {
-  color: white;
-}
-.weapons .title.weapons p {
-  color: white;
-  font-size: x-large;
-}
-.weapons {
-  background-color: #5068b5;
-}
-.weapons .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.weapons .content h3 {
-  color: white;
-}
-.weapons .content .weapons img {
-  width: 100%;
-  height: 100%;
-}
-.weapons .content .weapons {
-  padding: 10px 10px;
-  max-height: 350px;
-  max-width: 350px;
-  margin: 40px;
-  transition: 0.5s;
-  background: #f5f5f5;
-  text-align: center;
-  line-height: 2em;
-}
-.weapons .content .weapons:hover {
-  background: #000000;
-  /* transform: scale(1.1); */
-}
-.weapons .content .weapons h3 {
-  margin: 0;
-  transition: 0.5s;
-}
-.weapons .content .weapons:hover h3 {
+.art .content .art:hover h3 {
   color: #000000;
 }
 @media (max-width: 991px) {
