@@ -1,5 +1,100 @@
-# Hey!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Tsukarea's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="smallicon.png">
+</head>
 
-### Well well well, you've found my page, welcome! 
+<body ondragstart="return false;" ondrop="return false;">
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="home" id="home">
+        <div class="contentBx">
+            <div>
+                <h1>Hey!</h1>
+                <h3>Welcome to my page!</h3>
+                <br>
+                <p>Aspiring game dev | Hobbyist artist | Computer nerd</p>
+                <br>
+                <a href="#about" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="l.lecluse@protonmail.com"><img src="mail.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="art" id="art">
+        <div class="art title">
+            <h2>Some art, mainly pixel art!</h2>
+            <br><p>!</p>
+        </div>
+        <div class="content"> 
+            <div class="art">
+                <img src="tree.png">
+                <h3>Some trees</h3>
+            </div>
+            <div class="art">
+                <img src="lilypad.png">
+                <h3>A peaceful pond</h3>
+            </div>
+            <div class="art">
+                <img src="squid.png">
+                <h3>Squid attack!</h3>
+            </div>
+            <div class="art">
+              <img src="dragon.png"
+              <h3>A strange dragon</3>
+            </div>
+    </section>
+    <section class="about" id="about">
+        <div class="title about">
+            <h2>About</h2>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>Hello there, I'm Léa, and I've been playing video games for as long as I can remember. I've always been curious about how games are made, and that's mainly what sparked my interests for computer science and art. Mostly self taught, I'm trying to improve in both fields so I can hopefully create my own games some day!</p>
+            </div>
+            <div class="imgBx">
+                <img src="tsukarea.png">
+            </div>
+        </div>
+    </section>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()"><span style="text-align: center;"></span>Home</a></li>
+            <li><a href="#art"onclick="toggleMenu()"><span style="text-align: center;">Art</a></li>
+            <li><a href="#about" onclick="toggleMenu()"><span style="text-align: center;"></span>About</a></li>  
+            
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle')
+            const sidebar = document.querySelector('.sidebar')
+            menuToggle.classList.toggle('active')
+            sidebar.classList.toggle('active')
+        }
 
-
+    </script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function (e) {
+            if(e.keyCode == 123) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+            if(e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
