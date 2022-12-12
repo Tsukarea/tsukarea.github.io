@@ -1,12 +1,12 @@
 @font-face {
-  src: url("Pixelar\ Regular\ W01\ Regular.ttf");
-  font-family: pixelare;
+  src: url("retro_computer_personal_use.ttf");
+  font-family: retro;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: pixelare, sans-serif;
+  font-family: retro, sans-serif;
   scroll-behavior: smooth;
 }
 .toggle {
