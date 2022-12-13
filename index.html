@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <title>Tsukarea's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8b296a58d.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="smallicon.png">
 </head>
 <body ondragstart="return false;" ondrop="return false;">
-  <div class="outer" id="home">
-    <div class="intro">
-      <h1>Hey!</h1>
-      <h2>Welcome to my page!</h2>
-    </div>
-    <div class="contact">
-      <li><a href="mailto:l.lecluse@protonmail.com"><img src="mail.png"></a></li>
+  <div class="container" id="home">
+    <div class="content" id="intro">
+      <h1>Hey there!</h1>
+      <h2>Welcome!</h2>
+      <p></p>
+      <div class="content" id="contact">
+      <a href="mailto:l.lecluse@protonmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+      <a href="https://twitter.com/Tsukarera"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+      <a href="https://www.reddit.com/user/Tsukarea"><i class="fa-brands fa-reddit fa-2xl"></i></a>
+      <a href="https://github.com/Tsukarea"><i class="fa-brands fa-github fa-2xl"></i></a>
+      </div>
     </div>
   </div>
-  <div class="outer" id="art">
-    <div class="title">
+  <div class="container" id="art">
+    <div class="content" id="title">
       <h1>Art</h1>
-      <p>Some art, mainly pixel art!</p>
+      <p>I've been making pixel art and digital art for a while, here's a little showcase:</p>
     </div>
-    <div class="showcase">
+    <div class="content" id="showcase">
       <div class="box"><p><img src="tree.PNG">Some trees</p></div>
-      <div class="box"><p><img src="lilypad.png">A peaceful pond</p></div>
+      <div class="box"><p><img src="banner_spring.png">A banner for a friend</p></div>
       <div class="box"><p><img src="squid.png">Squid attack!</p></div>
       <div class="box"><p><img src="dragon.png">A strange dragon</p></div>
     </div>
   </div>
-  <div class="outer" id="code">
+  <div class="container" id="code">
     <p>Under construction...</p>
   </div>
 </body>
